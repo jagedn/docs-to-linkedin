@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>DocsToLinkedin</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <base target="_top">
+    <link href="https://ssl.gstatic.com/docs/script/css/add-ons1.css" rel="stylesheet">
+    <?!= include('static/style.css'); ?>
+
+    <script src="https://unpkg.com/hyperscript.org@0.9.6"></script>
+    <?!= include('static/Runner.js'); ?>
+</head>
+<body>
+<div class="sidebar branding-below">
+
+    <?!= include('static/header'); ?>
+
+    
+    <div class="content block">
+        <span id="message" class="messages">
+          You need to authorize this extension!!!
+        </span>
+    </div>
+
+    <div class="content block">        
+
+      <p>Click in the Authorize link to open a new window and start the auth flow</p>
+      <br/>
+
+      <p>Once identified you can close the new window and refresh this tab</p>
+      <br/>
+      <br/>
+      
+      <a href="<?= authorizationUrl ?>" target="_blank">Authorize</a>
+
+      <br/>
+
+    </div>    
+
+<div class="sidebar bottom">
+  <span class="gray branding-text">
+    DocsToLinkedin by @jagedn
+  </span>
+</div>
+
+</body>
+<script>    
+</script>
+</html>

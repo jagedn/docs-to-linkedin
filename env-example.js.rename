@@ -1,0 +1,7 @@
+function getClientId() {
+    return 'YOUR-LINKEDIN-CLIENT-ID';
+}
+
+function getClientSecret() {
+    return 'YOUR-LINKEDIN-CLIENT-SECRET';
+}
